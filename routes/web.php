@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','FrontController@trending')->name('trending');
+Route::get('/makanan','FrontController@makanan')->name('makanan');
+Route::get('/minuman','FrontController@minuman')->name('minuman');
+Route::get('/dessert','FrontController@dessert')->name('dessert');
+Route::get('/my-pesanan','FrontController@mypesanan')->name('mypesanan');
